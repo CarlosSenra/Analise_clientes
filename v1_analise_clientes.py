@@ -11,6 +11,8 @@ df_principal.drop(columns='Z_CostContact',inplace=True)
 
 #Começando por adicionar um sidebar
 st.sidebar.title("Explicação breve: ")
+st.sidebar.markdown("#### Aluno:")
+st.sidebar.markdown("Carlos Rafael Senra Brito:")
 st.sidebar.divider()
 st.sidebar.write('Este é a primeira versão do meu projeto de análise de clientes, a ideia final será realizar uma boa descritiva dos dados e aplicar algoritmos de clusterização e classificação, mostrando ao fim os resultados')
 
