@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 
-df_principal = pd.read_csv('C:/Users/rafin/Desktop/Dinamica clientes/marketing_campaign.csv', sep = '\t')
+df_principal = pd.read_csv('marketing_campaign.csv', sep = '\t')
 df_principal.drop(columns='Z_Revenue',inplace=True)
 df_principal.drop(columns='Z_CostContact',inplace=True)
 
