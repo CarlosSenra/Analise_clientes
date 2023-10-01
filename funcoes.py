@@ -2,6 +2,13 @@ import pandas as pd
 import numpy as np
 import plotly.express as px 
 
+#função que retorna o dataframe principal
+def df_principal():
+    df_principal = pd.read_csv('marketing_campaign.csv', sep = '\t')
+    df_principal.drop(columns='Z_Revenue',inplace=True)
+    df_principal.drop(columns='Z_CostContact',inplace=True)
+    return df_principal
+
 
 # grafico de barras - para as varaiveis categoricas dos dados
 def barra_contagem(coluna,dataframe):
@@ -10,7 +17,6 @@ def barra_contagem(coluna,dataframe):
 
   fig = px.bar(df, x=coluna, y='Count', text_auto=True)
   return fig
-
 
 
 
