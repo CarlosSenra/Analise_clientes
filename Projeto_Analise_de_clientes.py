@@ -1,21 +1,26 @@
 import streamlit as st
 import funcoes
 
-
 st.title('Dinâmica de clientes')
+
 
 col1, _ = st.columns(2)
 with col1:
-    st.markdown('''### Autor do projeto:  
-                Carlos Rafael Senra Brito''')
-    
-st.markdown('## Resumo')
-st.markdown('''A ideia central deste projeto tem com o intuito de realizar uma analise descritiva detalhada de um dataset que pode ser encontrado em
-            <https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis>. Onde em seguida será realizada uma série de clusterizações com 
-            o intuito de descobrir quais informações os clusters retornados por algoritimos diferentes retornam.  
-            Inicialmente realizo uma análise exploratória de dados presente em "AED -  Analise clientes" e em seguida serão adicionadas
-            as analises mais complexas.''')
+    st.markdown('### Autor do projeto:')  
+    st.markdown('[Carlos Rafael Senra Brito](https://www.linkedin.com/in/carlos-senra/)')
+st.markdown('''
+            # Introdução
 
+            Toda empresa tem seus respectivos clientes, sendo os mesmos possuidores de características, onde estas podem ser as mais diversificadas possíveis. 
+            Para um negócio dar certo é imprescindível o entendimento de personalidade de seus clientes, como o que eles compram ou os seus hábitos quando utilizam algum serviço da empresa. 
+            Neste sentido são esses tipos de informações que ajudam na tomada de decisão do grande escalão empresarial, em determinadas jogadas de criação de produtos, determinação de promoção 
+            direcionada a clientes específicos ou até mesmo sistema de recomendação de produtos.
+
+            O objetivo do atual a trabalho consiste em aplicar uma análise descritiva dos dados, para um entendimento geral e em seguida a aplicação de clusterização de clientes, 
+            com intuito de descobrir quais caracteristicas, que tais clusters, podem informar sobre os clientes. Para esta etapa foi utilizado o agrupamento hierarquico utilizando funções 
+            já implementadas do [Scipy](https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html#module-scipy.cluster.hierarchy) e 
+            [Scikit-learn](https://scikit-learn.org/stable/modules/clustering.html#clustering) para clusterização de dados.
+''')
 
 
 st.markdown('## Informações do dataset:')
@@ -62,5 +67,3 @@ st.markdown('''
 
 
 st.divider()
-
-st.markdown('O código será atualizado com o passar de tempo')

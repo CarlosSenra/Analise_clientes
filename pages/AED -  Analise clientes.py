@@ -4,13 +4,13 @@ import numpy as np
 import streamlit as st
 #import plotly.express as px
 
-df_principal = funcoes.df_principal()#pegando o df principal em funcoes
+df_principal = funcoes.df_principal('marketing_campaign.csv', '\t')#pegando o df principal em funcoes
 
 #Começando por adicionar um sidebar
-st.sidebar.title("Explicação breve: ")
-st.sidebar.markdown("#### Aluno:")
-st.sidebar.markdown("Carlos Rafael Senra Brito:")
+st.sidebar.markdown("#### Autor:")
+st.sidebar.markdown("[Carlos Rafael Senra Brito](https://www.linkedin.com/in/carlos-senra/)")
 st.sidebar.divider()
+st.sidebar.title("Explicação breve: ")
 st.sidebar.markdown('Nesta página podemos realizar um breve reconhecimento dos dados que serão utilizados.')
 st.sidebar.markdown('''  
                     * O primeiro grafico interativo se refere as variáveis categóricas do dataframe  
